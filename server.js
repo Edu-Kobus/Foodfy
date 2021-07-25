@@ -2,7 +2,7 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
-const recipe = require("/data")
+const recipe = require("./data")
 
 server.use(express.static('public')) //css
 
