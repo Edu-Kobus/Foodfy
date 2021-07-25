@@ -1,0 +1,97 @@
+/*===CARDS===*/
+.food-cards {
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-left: 31.5%;
+
+    margin-top: 56px;
+}
+
+.revenue{
+    line-height: 10px;
+}
+
+.food-image img{
+    border-radius: 15px;
+    width: 300px;
+    height: 140px;  
+}
+
+.revenue-content{
+    line-height: 5px;
+    margin-bottom: 20px;
+}
+.revenue-content h4{
+    font-size: 18px;
+    opacity: 70%;   
+}
+
+.revenue-content b{
+    color: #777777;
+    font-size: 14px;
+    opacity: 65%;
+}
+
+/*===FOOTER===*/
+.rodape{
+    background-color: #99999969;
+    opacity: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.rodape footer{
+    font-size: 15px;
+    text-align: center;
+    color: #777777;
+}
+
+/*== MODAL OVERLAY ==*/
+
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    background-color: white;
+
+    width: 660px;
+    height: 413px;
+
+    margin: 300px 300px 300px 950px;
+    
+    border-radius: 16px;
+}
+
+.modal-img img {
+    width: 600px;
+    height: 200px;
+
+    margin: 30px 30px 183px 30px;
+
+    border-radius: 15px;
+}
+
+.modal-img h2{
+    text-align: center;
+    
+}
+
