@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "recipe-list.njk" %}
+
+{% block about %}
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="content.css">
     <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="/assets/logo.png" alt="logo-foodfy">
-            </a>
-        </div>
-        <div class="options">
-            <a href="">Sobre</a>
-            <a href="receitas.html">Receitas</a>
-        </div>
-    </header>
 
     <div class="foodfy-content">
         <h1>Sobre o Foodfy</h1>
@@ -37,11 +22,4 @@
 
         <p>Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan. Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu ultrices lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat. Praesent euismod nec nisl at accumsan. Donec libero neque, vulputate semper orci et, malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.</p>
     </div>
-
-    <div class="rodape">
-        <footer>
-            Todos direitos reservados, receitas Foodfy.
-        </footer>
-    </div>
-</body>
-</html>
+{% endblock%}

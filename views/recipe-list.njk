@@ -1,14 +1,33 @@
 <html>
     <head>
-
-    {% block links %}{% endblock%}
-
+        <link rel="stylesheet" href="/styles.css">
+        <title>Foodfy</title>
     </head>
-<body>
     
-{% block contentHeader %}{% endblock%}
-    
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/">
+                <img src="/assets/logo.png" alt="logo-foodfy">
+                </a>
+            </div>
+            <div class="options">
+                <a href="/sobre">Sobre</a>
+                <a href="/receitas">Receitas</a>
+            </div>
+        </header>
 
-{% block baseboard %}{% endblock %}
-</body>
+        {% block mainPage %}{% endblock %}
+        {% block about %}{% endblock %}
+        {% block recipesPage %}{% endblock %}
+
+        
+        <div class="rodape">
+            <footer>
+                Todos direitos reservados, receitas Foodfy.
+            </footer>
+        </div>
+
+        <script src="/server.js"></script>
+    </body>
 </html>

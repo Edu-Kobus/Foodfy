@@ -1,28 +1,8 @@
 {% extends "recipe-list.njk" %}
 
-{% block links %}
-    <link rel="stylesheet" href="styles.css">
+{% block recipesPage %}
+    <link rel="stylesheet" href="/revenue-style.css">
 
-    <link rel="stylesheet" href="revenue-style.css">
-    <title>Foodfy</title>
-{% endblock %}
-    
-
-    {% block contentHeader %}
-    <header>
-        <div class="logo">
-            <a href="/">
-                <img src="/assets/logo.png" alt="logo-foodfy">
-            </a>
-        </div>
-        <div class="options">
-            <a href="/sobre">Sobre</a>
-            <a href="">Receitas</a>
-        </div>
-    </header>
-    {% endblock %}
-
-    {% block cards %}
     <section> 
         <div class="food-cards">
             <div class="revenue">
@@ -158,21 +138,4 @@
             </div>
         </div>
     </section>
-    {% endblock %}
-
-    {% block baseboard %}
-    <div class="rodape">
-        <footer>
-            Todos direitos reservados, receitas Foodfy.
-        </footer>
-    </div>
-    {% endblock %}
-
-    {# <div class="modal-overlay">
-        <div class="modal">
-            <div class="modal-img"> 
-                <img src="/assets/asinhas.png" alt="asinhas">
-                <h2>Triplo bacon burger</h2>
-            </div>
-        </div>
-    </div> #}
+{% endblock %}

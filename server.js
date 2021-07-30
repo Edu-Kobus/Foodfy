@@ -15,22 +15,24 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function(req, res) {
-    return res.render("/")
+    return res.render("index")
 })
 
-server.get("/recipe-list", function(req,res){
-    const id = req.query.id
-
-    const list = recipe.find(function(list){
-        return list.id == id
-    })
-
-    if (!list){
-        return res.send("Recipe not found!")
-    } //caso não encontre a receita
-
-    return res.render("list", { item: list })
+server.get("/sobre", function(req, res) {
+    return res.render("sobre")
 })
+
+server.get("/receitas", function(req, res) {
+    return res.render("receitas", { items: recipe })
+})
+
+server.get("/recipe-list:index", function(req,res){
+    const recipes = []; // Array de receitas carregadas do data.js
+    const recipeIndex = req.params.index;
+    
+    console.log(recipes[recipeIndex]);
+})
+
 
 server.listen(5000, function (){ //server port
     console.log('server is running !')

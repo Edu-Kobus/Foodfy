@@ -2,7 +2,7 @@ module.exports = [
     {
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png',
       title: 'Triplo bacon burger',
-      author: 'Jorge Relato',
+      author: 'Eduardo Kobus',
       ingredients: [
         '3 kg de carne moída (escolha uma carne magra e macia)',
         '300 g de bacon moído',
@@ -25,7 +25,7 @@ module.exports = [
     {
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png',
       title: 'Pizza 4 estações',
-      author: 'Fabiana Melo',
+      author: 'Rafaela Zaboenco',
       ingredients: [
         '1 xícara (chá) de leite',
         '1 ovo',
@@ -52,7 +52,7 @@ module.exports = [
     {
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png',
       title: 'Asinhas de frango ao barbecue',
-      author: 'Vania Steroski',
+      author: 'Chris Krüger',
       ingredients: [
         '12 encontros de asinha de galinha, temperados a gosto',
         '2 colheres de sopa de farinha de trigo',
@@ -69,7 +69,7 @@ module.exports = [
     {
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
       title: "Lasanha mac n' cheese",
-      author: 'Juliano Vieira',
+      author: 'Sara Martins',
       ingredients: [
         'massa pronta de lasanha',
         '400 g de presunto',
@@ -113,7 +113,7 @@ module.exports = [
     {
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png',
       title: 'Docinhos pão-do-céu',
-      author: 'Ricardo Golvea',
+      author: 'David Hübner',
       ingredients: [
         '1 kg de batata-doce',
         '100 g de manteiga',
