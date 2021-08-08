@@ -26,11 +26,15 @@ server.get("/receitas", function(req, res) {
     return res.render("receitas", { items: recipe })
 })
 
-server.get("/recipe-list:index", function(req,res){
-    const recipes = []; // Array de receitas carregadas do data.js
+server.get("/recipe-list", function(req,res){
+    const recipes = [
+        
+    ]; // Array de receitas carregadas do data.js
     const recipeIndex = req.params.index;
     
     console.log(recipes[recipeIndex]);
+
+    return res.render("recipe-list")
 })
 
 
