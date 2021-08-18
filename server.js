@@ -22,11 +22,11 @@ server.get("/sobre", function(req, res) {
     return res.render("sobre")
 })
 
-server.get("/receitas", function(req, res) {
-    return res.render("receitas", { items: recipe })
+server.get("/recipes", function(req, res) {
+    return res.render("recipes", { items: recipe })
 })
 
-server.get("/recipe-list", function(req,res){
+server.get("/layout", function(req,res){
     const recipes = [
         
     ]; // Array de receitas carregadas do data.js
@@ -34,7 +34,7 @@ server.get("/recipe-list", function(req,res){
     
     console.log(recipes[recipeIndex]);
 
-    return res.render("recipe-list")
+    return res.render("layout")
 })
 
 

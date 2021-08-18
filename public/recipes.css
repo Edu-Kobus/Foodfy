@@ -1,0 +1,14 @@
+.recipe_steps {
+    font-size: 15px;
+}
+
+.img_recipe {
+    margin: 6.13% 10.6% 10.7% 5.6%;
+}
+
+.img_recipe img{
+    width: 940px;
+    height: 280px;
+
+    border-radius: 15px;
+}
