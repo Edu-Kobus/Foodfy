@@ -19,9 +19,10 @@
         <h2>Mais acessadas</h2>
         
         <div class="food-cards">
+            {% for recipe in recipes %}
             <div class="revenue">
                 <div class="food-image">
-                    <img src="assets/burger.png" alt="burger">
+                    <img src="{{ recipe.image }}" alt="burger">
                 </div>
                 
                 <div class="revenue-content">
@@ -29,7 +30,7 @@
                     <b>por Eduardo Kobus</b>
                 </div>     
             </div>
-
+            {% endfor %}
             <div class="revenue">
                 <div class="food-image">
                     <img src="assets/pizza.png" alt="pizza">

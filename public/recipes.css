@@ -3,12 +3,33 @@
 }
 
 .img_recipe {
-    margin: 6.13% 10.6% 10.7% 5.6%;
+    height: 10em;
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 31.8%;
 }
 
 .img_recipe img{
     width: 940px;
     height: 280px;
-
     border-radius: 15px;
+}
+
+.img_recipe h1 {
+    text-align: center;
+    margin-top: 3%;
+
+}
+
+.img_recipe h4 {
+    line-height: 70%;
+    text-align: center;
+    color: grey;
+
+    margin-top: 1.8%;
+}
+
+.ingredient {
+    text-align: justify;
+    ;
 }

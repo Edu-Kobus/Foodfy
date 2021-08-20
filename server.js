@@ -22,20 +22,19 @@ server.get("/sobre", function(req, res) {
     return res.render("sobre")
 })
 
-server.get("/recipes", function(req, res) {
-    return res.render("recipes", { items: recipe })
-})
+// server.get("/recipes", function(req, res) {
+//     return res.render("recipes", { items: recipe })
+// })
 
-server.get("/layout", function(req,res){
-    const recipes = [
-        
-    ]; // Array de receitas carregadas do data.js
-    const recipeIndex = req.params.index;
+server.get("/recipes", function (req, res) {
+    const recipes = []; // Array de receitas carregadas do data.js
     
+    const recipeIndex = req.params.index;
+  
     console.log(recipes[recipeIndex]);
 
-    return res.render("layout")
-})
+    return res.render("recipes")
+  })
 
 
 server.listen(5000, function (){ //server port
