@@ -1,18 +1,24 @@
 .recipe_steps {
+    display: flex;
     font-size: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: flex-start; */
+    align-content: center;
 }
 
 .img_recipe {
-    height: 10em;
-    display: inline-block;
+    height: 10%;
+    /* display: inline-block; */
     margin-top: 3%;
-    margin-left: 31.8%;
 }
 
 .img_recipe img{
     width: 940px;
     height: 280px;
     border-radius: 15px;
+    align-content: stretch
 }
 
 .img_recipe h1 {
@@ -28,8 +34,18 @@
 
     margin-top: 1.8%;
 }
-
-.ingredient {
-    text-align: justify;
-    ;
+.ingredient{
+    margin-bottom: 3.1%;
+    margin-top: 3.9%;
 }
+.ingredient h2 {
+    margin-bottom: 1.6%;
+}
+.ingredient ul {
+    line-height: 178%;
+    width: 67.1%;
+}
+
+/* .addInformation {
+    margin-bottom: 3.7%;
+} */
