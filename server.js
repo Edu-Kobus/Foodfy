@@ -2,7 +2,7 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
-const recipe = require("./data")
+const recipe_data = require("./data")
 
 server.use(express.static('public')) //css
 
@@ -15,27 +15,29 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function(req, res) {
-    return res.render("index")
+    return res.render("index", { items: recipe_data })
 })
 
 server.get("/sobre", function(req, res) {
     return res.render("sobre")
 })
 
-// server.get("/recipes", function(req, res) {
-//     return res.render("recipes", { items: recipe })
-// })
+server.get("/recipe-list", function(req, res) {
+    return res.render("recipe-list", { items: recipe_data })
+})
 
-server.get("/recipes", function (req, res) {
-    const recipes = []; // Array de receitas carregadas do data.js
+server.get("/recipes/:index", function (req, res) {
+    // const recipes = recipe; // Array de receitas carregadas do data.js
     
     const recipeIndex = req.params.index;
-  
-    console.log(recipes[recipeIndex]);
+    
+    const recipes = recipe_data.find(function (recipe) {
+              
+        return recipe.index == recipeIndex
+    })
 
-    return res.render("recipes")
+    return res.render("recipes", { item: recipes })
   })
-
 
 server.listen(5000, function (){ //server port
     console.log('server is running !')

@@ -6,21 +6,19 @@
 
     <div class="recipe_steps">
         <div class="img_recipe">
-            <img src="assets/burger.png" alt="burger">
-            <h1>Triplo bacon burger</h1>
-            <h4>por Jorge Relato</h4>
+            <img src="{{ item.image }}" alt="{{ item.title }}">
+            <h1>{{ item.title }}</h1>
+            <h4>{{ item.recipe }}</h4>
         </div>
 
         <div class="ingredient">
+            
             <h2>Ingredientes</h2>
             <ul>
-                <li>3 kg de carne moída (escolha uma carne magra e macia);</li>
-                <li>3 kg de carne moída (escolha uma carne magra e macia);</li>
-                <li>300 g de bacon moído;</li>
-                <li>1 ovo;</li>
-                <li>3 colheres (sopa) de farinha de trigo;</li>
-                <li>3 colheres (sopa) de tempero caseiro: feito com alho, sal, cebola, pimenta e cheiro verde processados no liquidificador;</li>
-                <li>30 ml de água gelada;</li>
+                {% for item in ingredients_recipes %}
+                <li>{{ item.ingredients }}</li>
+                <li>{{ item.preparation }}</li>
+                {% endfor %}
             </ul>
         </div>
 
@@ -30,10 +28,7 @@
 
         <div class="addInformation">
             <h2>Informações adicionais</h2>
-            <h4>Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres!
-            </h4>
-            {# <h4>Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface.</h4> #}
-
+            <h4> {{ item.information }}</h4>
         </div>
     </div>
 {% endblock recipeList %}
