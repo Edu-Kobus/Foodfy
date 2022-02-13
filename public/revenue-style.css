@@ -35,14 +35,14 @@
 }
 
 /*===FOOTER===*/
-.rodape{
+.baseboard{
     background-color: #99999969;
     opacity: 50%;
     margin-top: 20%;
     padding: 30px;
 }
 
-.rodape footer{
+.baseboard footer{
     font-size: 15px;
     text-align: center;
     color: #777777;

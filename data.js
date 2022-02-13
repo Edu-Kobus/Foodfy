@@ -20,7 +20,7 @@ module.exports = [
         'Faça no máximo 4 camadas por forma e leve para congelar.',
         'Retire do congelador, frite ou asse e está pronto.'
       ],
-      information: "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \n\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açougueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijo, tomates e alface."
+      information: "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açougueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijo, tomates e alface."
     },
     {
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png',
@@ -64,7 +64,7 @@ module.exports = [
         'Em uma frigideira ou assador coloque o óleo quando estiver quente frite até ficarem douradas.',
         'Para servir fica bonito com salada, ou abuse da criatividade.'
       ],
-      information: ''
+      information: 'Clássica receita americana'
     },
     {
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
@@ -118,17 +118,17 @@ module.exports = [
         '1 kg de batata-doce',
         '100 g de manteiga',
         '3 ovos',
-        '1 pacote de coco seco ralado (100 g)',
-        '3 colheres (sopa) de açúcar 1 lata de Leite Moça',
-        '1 colher (sopa) de fermento em pó',
+        '1 pacote de coco seco ralado 100 g',
+        '3 colheres sopa de açúcar 1 lata de Leite Moça',
+        '1 colher sopa   de fermento em pó',
         'manteiga para untar',
         'açúcar de confeiteiro'
       ],
       preparation: [
         'Cozinhe a batata-doce numa panela de pressão, com meio litro de água, por cerca de 20 minutos. Descasque e passe pelo espremedor, ainda quente.',
         'Junte a manteiga, os ovos, o coco ralado, o açúcar, o Leite Moça e o fermento em pó, mexendo bem após cada adição.',
-        'Despeje em assadeira retangular média, untada e leve ao forno médio (180°C), por aproximadamente 45 minutos. Depois de frio, polvilhe, com o açúcar de confeiteiro e corte em quadrados.'
+        'Despeje em assadeira retangular média, untada e leve ao forno médio 180°C, por aproximadamente 45 minutos. Depois de frio, polvilhe, com o açúcar de confeiteiro e corte em quadrados.'
       ],
-      information: ''
+      information: 'Docinhos pão-do-céu é um típico doce brasileiro, originado no Norte do Brasil'
     }
   ];

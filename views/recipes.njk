@@ -1,6 +1,6 @@
 {% extends "layout.njk" %}
 
-{% block recipeList %}
+{% block recipeDetail %}
     <link rel="stylesheet" href="/recipes.css">
     <link rel="stylesheet" href="/revenue-style.css">
 
@@ -15,15 +15,13 @@
             
             <h2>Ingredientes</h2>
             <ul>
-                {% for item in ingredients_recipes %}
                 <li>{{ item.ingredients }}</li>
-                <li>{{ item.preparation }}</li>
-                {% endfor %}
             </ul>
         </div>
 
         <div class="preparation">
             <h2>Modo de preparo</h2>
+            <h4>{{ item.preparation }}</h4>
         </div>
 
         <div class="addInformation">
@@ -31,4 +29,4 @@
             <h4> {{ item.information }}</h4>
         </div>
     </div>
-{% endblock recipeList %}
+{% endblock recipeDetail %}

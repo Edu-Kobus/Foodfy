@@ -4,7 +4,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: flex-start; */
+    align-items: flex-start;
     align-content: center;
 }
 
@@ -25,7 +25,6 @@
 .img_recipe h1 {
     text-align: center;
     margin-top: 3%;
-
 }
 
 .img_recipe h4 {
@@ -35,18 +34,42 @@
 
     margin-top: 1.8%;
 }
+
 .ingredient{
     margin-bottom: 3.1%;
     margin-top: 3.9%;
 }
+
 .ingredient h2 {
-    margin-bottom: 1.6%;
+    margin-bottom: 1%;
 }
+
 .ingredient ul {
     line-height: 178%;
     width: 67.1%;
 }
 
+.preparation {
+    line-height: 150%;
+    /* width: 67.1%; */
+    margin-bottom: 3.1%;
+}
+
+.preparation h2{
+    margin-bottom: 1%;
+}
+
+.preparation h4 {
+    font-weight: 100
+}
 /* .addInformation {
-    margin-bottom: 3.7%;
+    justify-content: flex-start;
 } */
+
+.addInformation h2 {
+    margin-bottom: 1%;
+}
+
+.addInformation h4{
+    font-weight: 100
+}

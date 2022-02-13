@@ -1,10 +1,10 @@
-const modalOverlay = document.querySelector('.modal-overlay');
-const cards = document.querySelectorAll('.revenue');
-const modal = document.querySelector(".modal");
+const recipesCards = document.querySelector('.revenue');
 
-for (let revenue of cards ) {
-    revenue.addEventListener("click", function(){
-        modalOverlay.classList.add('active');
+for (let recipe of recipesCards ) {
+    recipe.addEventListener("click", function(){
+
+        const revenueId = recipe.getAttribute("index")
+       window.location.href = `/recipes/${revenueId}`
     })
 }
 

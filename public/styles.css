@@ -115,13 +115,13 @@ section h2{
     line-height: 45px;
 }
 
-.rodape{
+.baseboard{
     background-color: #EEEEEE;
     margin-top: 50px;
     padding:30px;
 }
 
-.rodape footer{
+.baseboard footer{
     color: #999999;
     font-size: 15px;
     text-align: center;
