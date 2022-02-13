@@ -11,21 +11,26 @@
             <h4>{{ item.recipe }}</h4>
         </div>
 
-        <div class="ingredient">
-            
-            <h2>Ingredientes</h2>
+        <div class="ingredient show_and_hide">
+            <h2>
+                Ingredientes  <button class = btn_steps>MOSTRAR</button>
+            </h2>
             <ul>
                 <li>{{ item.ingredients }}</li>
             </ul>
         </div>
 
-        <div class="preparation">
-            <h2>Modo de preparo</h2>
+        <div class="preparation show_and_hide">
+            <h2>
+                Modo de preparo  <button class = btn_steps>MOSTRAR</button>
+            </h2>
             <h4>{{ item.preparation }}</h4>
         </div>
 
-        <div class="addInformation">
-            <h2>Informações adicionais</h2>
+        <div class="addInformation show_and_hide">
+            <h2>
+                Informações adicionais <button class = btn_steps>MOSTRAR</button>
+            </h2>
             <h4> {{ item.information }}</h4>
         </div>
     </div>
