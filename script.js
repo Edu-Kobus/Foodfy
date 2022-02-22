@@ -1,9 +1,9 @@
-const recipesCards = document.querySelector('.revenue');
+const recipesCards = document.querySelectorAll('.revenue');
 
 for (let recipe of recipesCards ) {
     recipe.addEventListener("click", function(){
 
-        const revenueId = recipe.getAttribute("index")
+        const revenueId = recipe.getAttribute("id")
        window.location.href = `/recipes/${revenueId}`
     })
 }
@@ -21,4 +21,3 @@ btn.addEventListener("click", function() {
   }
     
 });
-
