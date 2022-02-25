@@ -9,6 +9,9 @@
 body{
     font-family: 'Roboto', sans-serif
 }
+header {
+    justify-content: center;
+}
 
 header div{
     display: inline-block;
@@ -72,11 +75,16 @@ header a:hover{
     margin: 66px 100px 0px 624px;
 }
 
+
+section {
+    position: static;
+    /* right: 136px; */
+}
+
 section h2{
-    margin-left: 31.5%;
+    margin-left: 17.5%;
     margin-top: 50px;
     margin-bottom: 20px;
-    
 }
 
 .food-cards {
@@ -84,7 +92,8 @@ section h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    margin-left: 31.5%;
+    margin: auto;
+    justify-content: center
 }
 
 .revenue{
@@ -95,7 +104,8 @@ section h2{
 .food-image img{
     border-radius: 15px;
     width: 300px;
-    height: 140px;  
+    height: 140px;
+    object-fit: cover;
 }
 
 .revenue-content{
